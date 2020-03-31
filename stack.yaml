@@ -10,10 +10,13 @@ packages:
 extra-include-dirs:
   - deps/libtorch/include/torch/csrc/api/include
   - deps/libtorch/include
+  - /nix/store/5r8986sg1l1alhgqw631b23cgilv14vk-libtorch-1.4/include
+  - /nix/store/5r8986sg1l1alhgqw631b23cgilv14vk-libtorch-1.4/include/torch/csrc/api/include
 
 extra-lib-dirs:
   - deps/libtorch/lib
   - deps/mklml/lib
+  - /nix/store/5r8986sg1l1alhgqw631b23cgilv14vk-libtorch-1.4/lib
 
 # see https://github.com/commercialhaskell/stack/issues/4073
 # with-gcc: /usr/local/bin/gcc-7

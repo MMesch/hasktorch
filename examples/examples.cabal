@@ -29,6 +29,19 @@ executable xor-mlp
   hs-source-dirs:      xor-mlp
   main-is:             Main.hs
 
+
+executable dynamic-unet-cnn
+  import:              config
+  hs-source-dirs:      dynamic-unet-cnn
+  ghc-options:         -fno-warn-partial-type-signatures
+  main-is:             Main.hs
+  build-depends:       base >= 4.7 && < 5
+                     , hasktorch
+                     , JuicyPixels
+                     , mtl
+                     , reflection
+
+
 executable static-xor-mlp
   import:              config
   hs-source-dirs:      static-xor-mlp
